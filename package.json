@@ -1,0 +1,24 @@
+{
+  "name": "grupo_10_inmobiliariadh",
+  "version": "1.0.0",
+  "description": "¡Bienvenido a **Inmobiliaria DH**! Somos una plataforma dedicada a facilitar la búsqueda y venta de propiedades inmobiliarias de manera eficiente y segura. Nuestro objetivo es conectar a compradores y vendedores de propiedades, ofreciendo una amplia gama de opciones y herramientas para satisfacer las necesidades de todos nuestros usuarios.",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BiagioliJuanManuel/grupo_10_inmobiliariaDH.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BiagioliJuanManuel/grupo_10_inmobiliariaDH/issues"
+  },
+  "homepage": "https://github.com/BiagioliJuanManuel/grupo_10_inmobiliariaDH#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
