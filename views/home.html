@@ -1,15 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inmobiliaria DH</title>
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1><i class="fa-solid fa-house"></i>Inmobiliaria DH</h1>
-    <a href="/login">login</a>
-    <a href="/detalleDeProducto">Detalle de Producto</a>
+    <header>
+    
+            <img src="img/logo-2.png" alt="inmobiliariaDH" class="logo-img">
+        
+        <form action="/" method="get" class="formulario">
+            <div class="buscador-container">
+                <input type="text" name="search" id="search" class="buscador__input">
+                <button type="submit" class="buscador__button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </form>
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="/login">Login</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-address-card"></i>
+                    <a href="/registro">Registro</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="/carrito">Carrito</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Propiedades cercanas a vos!</h1>
+        <section class="section__propiedades">
+            <article class="propiedad">
+
+            </article>
+            <article class="propiedad">
+
+            </article>
+            <article class="propiedad">
+
+            </article>
+            <article class="propiedad">
+
+            </article>
+
+        </section>
+    </main>
 </body>
+<footer>
+    <img src="img/logo-2.png" alt="inmobiliariaDH" class="footer__img">
+    <section>
+        <article>
+            <h2>Nuestras redes</h2>
+            <p><i class="fa-brands fa-facebook"></i>/DH.inmobiliaria</p>
+            <p><i class="fa-brands fa-twitter"></i>@inmobiliariaDH</p>
+            <p><i class="fa-brands fa-linkedin"></i>/inmobiliariaDH</p>
+            <p><i class="fa-brands fa-instagram"></i>@inmobiliariaDH</p>
+            <p><i class="fa-brands fa-google"></i>/inmobiliaria-DH</p>
+        </article>
+        <article>
+            <h2>Contacto</h2>
+            <p><i class="fa-solid fa-phone"></i>+3804-123456</p>
+            <p><i class="fa-brands fa-whatsapp"></i>+54-3804-654321</p>
+            <p><i class="fa-solid fa-envelope"></i>contacto@inmobiliariadh.com</p>
+            <p><i class="fa-solid fa-location-dot"></i>Av. San Martin 543</p>
+        </article>
+
+    </section>
+    <p class="copyright">2024 - Todos los derechos reservados</p>
+</footer>
+
 </html>

@@ -1,1 +1,130 @@
-h1{background-color: #E2A600;}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E2A600;
+    /* background-color: #E5D0AC; */
+    font-family: "Roboto", sans-serif;
+    color: #17353B;
+}
+
+.header{
+    width: max-content;
+    justify-content: space-between;
+}
+
+
+.logo-img{
+    height: 10vh;
+    object-fit: scale-down;
+}
+
+.logo-img img{
+    max-width: fit-content;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formulario{
+    /* width:  30%; mover a media desktop */
+    display: flex;
+    align-items: center;
+}
+
+.buscador-container{
+    width: 100%;
+}
+
+.buscador__input {
+    width: 80%;
+    padding: 10px 40px 10px 10px;
+}
+
+.buscador__input,.buscador__button{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.buscador__button{
+    position: relative;
+    right: 50px; /* Ajusta según sea necesario */
+    border: none;
+    background: none;
+}
+
+nav{
+    display: flex;
+    /* width: 30vw; */
+    justify-content: flex-end;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    margin: 10px;
+    text-align: center;
+    background-color: #E2A600;
+}
+
+.section__propiedades{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.propiedad{
+    height: 20vh;
+    width: 30%;
+     border: 1px solid red ;
+}
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer__img{
+    height: 15vh;
+}
+
+footer section{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.copyright{
+    width: 100%;
+}
+
+
+@media(min-width: 230px) and (max-width:460px){
+    .propiedad{
+        width: 100%;
+    }
+
+
+}
