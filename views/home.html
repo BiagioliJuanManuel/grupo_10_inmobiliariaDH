@@ -15,20 +15,27 @@
 </head>
 
 <body>
-    <header>
-    
-            <img src="img/logo-2.png" alt="inmobiliariaDH" class="logo-img">
+    <header class="flex">
+            <a href="/" class="link__home">
+                <img src="img/logo-2.png" alt="inmobiliariaDH" class="logo-img">
+            </a>
+                
         
-        <form action="/" method="get" class="formulario">
-            <div class="buscador-container">
+            <div class="buscador-container flex">
+                <form action="/" method="get" class="flex">
                 <input type="text" name="search" id="search" class="buscador__input">
                 <button type="submit" class="buscador__button">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
+            </form>
             </div>
-        </form>
-        <nav>
-            <ul>
+
+        <div class="menu-container flex">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+
+        <nav class="nav-bar flex">
+            <ul class="flex">
                 <li>
                     <i class="fa-solid fa-user"></i>
                     <a href="/login">Login</a>
@@ -46,40 +53,66 @@
     </header>
     <main>
         <h1>Propiedades cercanas a vos!</h1>
-        <section class="section__propiedades">
+        <section class="section__propiedades flex">
             <article class="propiedad">
-
+                <div class="article__card">
+                    <h2>Venta Av. Belgrano 495</h2>
+                    <img src="https://picsum.photos/id/690/330/200" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sequi dignissimos reiciendis repellendus fuga ducimus repellat deserunt tempore temporibus ea.</p>
+                </div>
+                
             </article>
             <article class="propiedad">
-
+                <div class="article__card">
+                    <h2>Alquiler Estancia Las Marias</h2>
+                    <img src="https://picsum.photos/id/570/330/200" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sequi dignissimos reiciendis repellendus fuga ducimus repellat deserunt tempore temporibus ea.</p>
+                </div>
+                
             </article>
             <article class="propiedad">
-
+                <div class="article__card">
+                    <h2>Alquiler Pinamar</h2>
+                    <img src="https://picsum.photos/id/590/330/200" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sequi dignissimos reiciendis repellendus fuga ducimus repellat deserunt tempore temporibus ea.</p>
+                </div>
+                
             </article>
             <article class="propiedad">
-
+                <div class="article__card">
+                    <h2>Alquiler Palm Beach</h2>
+                    <img src="https://picsum.photos/id/270/330/200" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sequi dignissimos reiciendis repellendus fuga ducimus repellat deserunt tempore temporibus ea.</p>
+                </div>
+                
             </article>
 
         </section>
     </main>
 </body>
-<footer>
+<footer class="flex">
     <img src="img/logo-2.png" alt="inmobiliariaDH" class="footer__img">
     <section>
-        <article>
-            <h2>Nuestras redes</h2>
-            <p><i class="fa-brands fa-facebook"></i>/DH.inmobiliaria</p>
-            <p><i class="fa-brands fa-twitter"></i>@inmobiliariaDH</p>
-            <p><i class="fa-brands fa-linkedin"></i>/inmobiliariaDH</p>
-            <p><i class="fa-brands fa-instagram"></i>@inmobiliariaDH</p>
-            <p><i class="fa-brands fa-google"></i>/inmobiliaria-DH</p>
+        <article class="footer__article">
+            <h2 class="footer__title">Nuestras redes</h2>
+            <ul>
+                <li class="footer__line"><i class="fa-brands fa-facebook"></i>/DH.inmobiliaria</li>
+                <li class="footer__line"><i class="fa-brands fa-twitter"></i>@inmobiliariaDH</li>
+                <li class="footer__line"><i class="fa-brands fa-linkedin"></i>/inmobiliariaDH</li>
+                <li class="footer__line"><i class="fa-brands fa-instagram"></i>@inmobiliariaDH</li>
+                <li class="footer__line"><i class="fa-brands fa-google"></i>/inmobiliaria-DH</li>
+            </ul>
+
         </article>
-        <article>
-            <h2>Contacto</h2>
-            <p><i class="fa-solid fa-phone"></i>+3804-123456</p>
-            <p><i class="fa-brands fa-whatsapp"></i>+54-3804-654321</p>
-            <p><i class="fa-solid fa-envelope"></i>contacto@inmobiliariadh.com</p>
-            <p><i class="fa-solid fa-location-dot"></i>Av. San Martin 543</p>
+        <article class="footer__article">
+            <h2 class="footer__title">Contacto</h2>
+            <ul>
+                <li class="footer__line"><i class="fa-solid fa-phone"></i>+3804-123456</li>
+                <li class="footer__line"><i class="fa-brands fa-whatsapp"></i>+54-3804-654321</li>
+                <li class="footer__line"><i class="fa-solid fa-envelope"></i>contacto@inmobiliariadh.com</li>
+                <li class="footer__line"><i class="fa-solid fa-location-dot"></i>Av. San Martin 543</li>
+            </ul>
+
         </article>
 
     </section>
