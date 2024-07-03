@@ -1,0 +1,48 @@
+/* HEADER */
+header{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+/* Single Product */
+h1{
+    margin: 0%;
+}
+#propdetail{
+    display: flex;
+    margin-top: 10px;
+}
+
+#propdetail .single-prop-detail{
+    width: 50%;
+    margin-top: 60px;
+    margin-left: 50px;
+    border: 2px solid rgb(0, 0, 0);
+ }
+
+ /*
+
+#propdetail .single-prop-detail button{
+    background-color: #0ab875;
+    color: white;
+    border: 0ch;
+}
+
+*/
+
+ #propdetail .single-prop-image{
+    width: 40%;
+    margin-top: 50px;
+ }
+
+ .small-img-group{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+ }
