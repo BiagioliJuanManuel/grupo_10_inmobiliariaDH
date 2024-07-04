@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E2A600;
+    /* background-color: #E5D0AC; */
+    font-family: "Roboto", sans-serif;
+    color: #17353B;
+}
+
+.logo-img {
+    height: 10vh;
+    object-fit: scale-down;
+}
+
+.logo-img img {
+    max-width: fit-content;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+} 
+
+.container{ 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+    
+}  
+#loginform{
+    width: 800px; 
+    padding: 80px;
+    box-shadow: #17353B;
+}
