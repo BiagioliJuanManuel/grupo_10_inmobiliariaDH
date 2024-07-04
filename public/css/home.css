@@ -86,6 +86,8 @@ h1{
     background-color: #E2A600;
 }
 
+/* -------------- Articulos -------------- */
+
 .section__propiedades{
     flex-wrap: wrap;
     align-items: center;
@@ -104,11 +106,35 @@ h1{
     background-color:#E5D0AC;
 }
 
+.article__title{
+    margin: 1em;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
 .article__card img{
     width: 100%;
     height: auto;
 }
 
+.article__subtitle{
+    justify-content: space-between;
+    align-content: stretch;
+    padding: 1em;
+}
+
+.article__location{
+    padding-left: 1em;
+}
+
+.article__features{
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.article__features li{
+    /* display: block; */
+}
 /* ----------- Footer ------------ */
 
 footer{
