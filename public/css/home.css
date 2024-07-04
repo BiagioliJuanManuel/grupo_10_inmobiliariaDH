@@ -11,9 +11,13 @@ body{
     color: #17353B;
 }
 
-.header{
-    width: max-content;
-    justify-content: space-between;
+.flex{
+    display: flex;
+}
+
+header{
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 
@@ -26,47 +30,42 @@ body{
     max-width: fit-content;
 }
 
-header{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.formulario{
-    /* width:  30%; mover a media desktop */
-    display: flex;
-    align-items: center;
-}
 
 .buscador-container{
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .buscador__input {
-    width: 80%;
-    padding: 10px 40px 10px 10px;
-}
-
-.buscador__input,.buscador__button{
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 4px;
 }
 
+
+
 .buscador__button{
     position: relative;
-    right: 50px; /* Ajusta según sea necesario */
+    right: 25px; /* Ajusta según sea necesario */
     border: none;
     background: none;
 }
 
-nav{
-    display: flex;
-    /* width: 30vw; */
-    justify-content: flex-end;
+.menu-container{
+    align-items: center;
+    padding-right: 20px;
+}
+
+.menu-container i {
+    display: none;
+}
+
+.nav-bar{
+    /* justify-content: flex-end; */
 }
 
 nav ul{
-    display: flex;
     list-style: none;
     align-items: center;
 }
@@ -88,31 +87,61 @@ h1{
 }
 
 .section__propiedades{
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
 .propiedad{
-    height: 20vh;
-    width: 30%;
-     border: 1px solid red ;
+    /* height: 20vh; */
+    width: 33%;
+     /* border: 1px solid red ; */
 }
 
+.article__card{
+    margin: 5%;
+    border: 1px solid cornsilk;
+    border-radius: 4px;
+    background-color:#E5D0AC;
+}
+
+.article__card img{
+    width: 100%;
+    height: auto;
+}
+
+/* ----------- Footer ------------ */
 
 footer{
-    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    text-align: center;
+}
+footer, .footer__img, .footer__article, .copyright{
+    margin: 10px 0px;
+}
+
+.footer__line{
+    margin: 5px 0;
+    font-style: italic;
+}
+
+.footer__line i {
+    padding: 0px 5px;
+}
+
+.footer__line:hover{
+    color: #3E797C;
 }
 
 .footer__img{
-    height: 15vh;
+    height: 7vh;
 }
 
 footer section{
-    width: 70%;
+    /* width: 70%; */
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -126,5 +155,49 @@ footer section{
         width: 100%;
     }
 
+    .nav-bar{
+        display: none;
+    }
+
+    .menu-container i{
+        display: block;
+    }
 
 }
+
+/*and (max-width: 1280)*/
+@media(min-width: 461px){
+
+ 
+    footer section{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .copyright{
+        width: 100vw;
+    }
+
+}
+
+
+@media(min-width: 1024px) {
+    
+    .buscador-container{
+        width: 50%;
+    }
+
+    .buscador-container form,.buscador__input{
+        width: 100%;
+    }
+
+}
+
+/* 
+PALETA DE COLORES - DH INMOBILIARIA
+#3E797C (AZUL TURQ)
+#E2A600 (MOSTA)
+#E5D0AC (BEIGE)
+#17353B (AZUL OSC)
+
+*/
