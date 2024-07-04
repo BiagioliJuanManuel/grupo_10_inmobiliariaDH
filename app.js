@@ -19,4 +19,7 @@ app.get('/', (req, res) => {
  app.get('/detalleDeProducto', (req, res) => {
    res.sendFile(path.resolve("views/detalleDeProducto.html"));
 });
+app.get('/registro', (req, res) => {
+   res.sendFile(path.resolve("views/registro.html"));
+});
  
