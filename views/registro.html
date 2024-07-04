@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="/css/registro.css">
+    <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,10 +13,42 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <img src="img/logo-2.png" alt="Logo">
-            <input type="text" placeholder="Buscar...">
-        </header>
+        <header class="flex">
+            <a href="/" class="link__home">
+                <img src="img/logo-2.png" alt="inmobiliariaDH" class="logo-img">
+            </a>
+                
+        
+            <div class="buscador-container flex">
+                <form action="/" method="get" class="flex">
+                <input type="text" name="search" id="search" class="buscador__input">
+                <button type="submit" class="buscador__button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            </div>
+
+        <div class="menu-container flex">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+
+        <nav class="nav-bar flex">
+            <ul class="flex">
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="/login">Login</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-address-card"></i>
+                    <a href="/registro">Registro</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="/carrito">Carrito</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
         <div class="contenidoPrincipal">
             <img src="placeholder.png" alt="ImagenPrincipal">
             <div class="form-container">
@@ -34,28 +67,34 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="columna_1">
-                <img src="placeholder.png" alt="imagenFooter">
-                <ul>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>amet et delectus</li>
-                    <li>accommodare his consul</li>
-                    <li>copiosae legendos at vix</li>
-                    <li>ad putent delectus</li>
-                    <li>delicata usu. Vidit dissentiet eos cu</li>
-                </ul>
-            </div>
-            <div class="columna_2">
-                <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>et delectus accommodare</li>
-                    <li>his consul copiosae</li>
-                    <li>legendos at vix ad putent</li>
-                    <li>delectus delicata usu. Vidit dissentiet eos cu</li>
-                </ul>
-            </div>
-        </footer>
     </div>
+    <footer class="flex">
+        <img src="img/logo-2.png" alt="inmobiliariaDH" class="footer__img">
+        <section>
+            <article class="footer__article">
+                <h2 class="footer__title">Nuestras redes</h2>
+                <ul>
+                    <li class="footer__line"><i class="fa-brands fa-facebook"></i>/DH.inmobiliaria</li>
+                    <li class="footer__line"><i class="fa-brands fa-twitter"></i>@inmobiliariaDH</li>
+                    <li class="footer__line"><i class="fa-brands fa-linkedin"></i>/inmobiliariaDH</li>
+                    <li class="footer__line"><i class="fa-brands fa-instagram"></i>@inmobiliariaDH</li>
+                    <li class="footer__line"><i class="fa-brands fa-google"></i>/inmobiliaria-DH</li>
+                </ul>
+    
+            </article>
+            <article class="footer__article">
+                <h2 class="footer__title">Contacto</h2>
+                <ul>
+                    <li class="footer__line"><i class="fa-solid fa-phone"></i>+3804-123456</li>
+                    <li class="footer__line"><i class="fa-brands fa-whatsapp"></i>+54-3804-654321</li>
+                    <li class="footer__line"><i class="fa-solid fa-envelope"></i>contacto@inmobiliariadh.com</li>
+                    <li class="footer__line"><i class="fa-solid fa-location-dot"></i>Av. San Martin 543</li>
+                </ul>
+    
+            </article>
+    
+        </section>
+        <p class="copyright">2024 - Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
