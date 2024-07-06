@@ -34,3 +34,6 @@
 - [Carrito de compras](https://github.com/BiagioliJuanManuel/grupo_10_inmobiliariaDH/blob/main/wireframes/5-Carrito-de-compra-Favoritos.png)
 - [Alternativa de Carrito](https://github.com/BiagioliJuanManuel/grupo_10_inmobiliariaDH/blob/main/wireframes/6-Favoritos-Comparacion.png)
 
+
+## Trello
+- [Link al tablero](https://trello.com/b/Mv16D7yL/grupo-10-inmobiliariadh)
