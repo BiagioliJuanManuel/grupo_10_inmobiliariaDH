@@ -57,15 +57,46 @@ header{
     padding-right: 20px;
 }
 
-.menu-container svg {
+.menu-container{
+    /* display: none; */
+}
+
+.check, .icons{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.icons{
+    pointer-events: none;
+}
+
+.check{
+    opacity: 0;
+}
+
+.cross__icon{
     display: none;
 }
 
-.nav-bar{
-    /* justify-content: flex-end; */
+.check:checked ~ .list__icon{
+    display: none;
 }
 
-nav ul{
+.check:checked ~ .cross__icon{
+    display: block;
+}
+
+.check:checked ~ .menu{
+    display: flex;
+}
+
+.menu{
+    padding-left: 30px;
+}
+
+ul{
     list-style: none;
     align-items: center;
 }
@@ -181,14 +212,9 @@ footer section{
         width: 100%;
     }
 
-    .nav-bar{
+    .menu{
         display: none;
     }
-
-    .menu-container svg{
-        display: block;
-    }
-
 }
 
 /*and (max-width: 1280)*/
@@ -202,6 +228,10 @@ footer section{
 
     .copyright{
         width: 100vw;
+    }
+
+    .check, .icons{
+        display: none;
     }
 
 }
