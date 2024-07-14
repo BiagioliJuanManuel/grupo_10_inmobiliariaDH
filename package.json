@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/BiagioliJuanManuel/grupo_10_inmobiliariaDH#readme",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^4.19.2"
   }
 }

@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("node:path");
+const router = require("./routes/indexRoute");
 
 app.use(express.static("./public"));
 
@@ -8,21 +9,8 @@ const PORT = 3030;
 
 app.listen(PORT,()=> console.log(`Servidor corriendo en puerto ${PORT}`));
 
-app.get('/', (req, res) => {
-    res.sendFile(path.resolve("views/home.html"));
- });
+app.set('view engine', 'ejs');
 
- app.get('/login', (req, res) => {
-    res.sendFile(path.resolve("views/login.html"));
- });
+app.use('/', router);
 
- app.get('/detalleDeProducto', (req, res) => {
-   res.sendFile(path.resolve("views/detalleDeProducto.html"));
-});
-app.get('/registro', (req, res) => {
-   res.sendFile(path.resolve("views/registro.html"));
-});
-app.get('/favorito',(req, res) => {
-   res.sendFile(path.resolve("views/favorito.html"))
-})
  
