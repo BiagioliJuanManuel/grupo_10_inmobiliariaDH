@@ -1,0 +1,281 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E2A600;
+    /* background-color: #E5D0AC; */
+    font-family: "Roboto", sans-serif;
+    color: #17353B;
+}
+
+.flex{
+    display: flex;
+}
+/* -------------- Header/Navbar -------------- */
+
+header{
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    position: relative;
+    height: 15vh;
+}
+
+.link__home{
+    display: inline-block;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+.logo-img{
+    height: 10vh;
+    object-fit: scale-down;
+}
+
+.logo-img img{
+    max-width: fit-content;
+}
+
+
+.buscador-container{
+    /* align-items: center; */
+    justify-content: center;
+    position: absolute;
+    top: 33px;
+    left: 30%;
+}
+
+.buscador__input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+
+.buscador__button{
+    position: relative;
+    right: 25px; /* Ajusta según sea necesario */
+    border: none;
+    background: none;
+}
+
+.menu-container{
+    align-items: center;
+    /* padding-right: 20px; */
+    position: absolute;
+    right: 15%;
+    top: 35px;
+    font-size: 20px;
+}
+
+.check, .icons{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.icons{
+    pointer-events: none;
+}
+
+.check{
+    opacity: 0;
+}
+
+.cross__icon{
+    display: none;
+}
+
+.check:checked ~ .list__icon{
+    display: none;
+}
+
+.check:checked ~ .cross__icon{
+    display: block;
+}
+
+.check:checked ~ .menu{
+    display: flex;
+}
+
+.menu{
+    padding-left: 30px;
+}
+
+ul{
+    list-style: none;
+    align-items: center;
+}
+
+li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* Formulario de Administración */
+
+.section__propiedades {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.propiedad__formulario {
+    padding: 20px;
+    background-color: #E5D0AC;
+    border: #17353B solid 1px;
+    border-radius: 5px;
+}
+
+.formulario h2,.formulario h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.formulario__label {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="date"],
+.formulario input[type="password"],
+.formulario input[type="file"],
+.formulario input[type="radio"],
+.formulario input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.formulario input[type="checkbox"],
+.formulario input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.formulario input[type="submit"],
+.formulario input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.formulario input[type="reset"] {
+    background-color: #ccc;
+    margin-top: 5px;
+}
+
+.formulario input[type="reset"]:hover,
+.formulario input[type="submit"]:hover {
+    background-color: #2968c8;
+    /* background-color: #0022AA; */
+}
+
+/* CSS Styles for Error Handling */
+
+/* Estilo para mensajes de error - inicialmente oculto */
+.error-message {
+    display: none; /* Oculta el mensaje de error por defecto */
+    color: red; /* Color del texto del mensaje de error */
+    font-size: 12px; /* Tamaño de la fuente del mensaje de error */
+    margin-top: 5px; /* Espacio arriba del mensaje de error */
+}
+
+.error-message i {
+    margin: 0px 7px;
+}
+
+/* Estilo para campos inválidos */
+form.submitted input:invalid {
+    border: 2px solid red; /* Borde rojo para campos inválidos */
+}
+/* Estilo para campos inválidos */
+form input:invalid:focus {
+    border: 2px solid red; /* Borde rojo para campos inválidos */
+}
+
+input:focus-visible{
+    outline: none; 
+}
+
+
+/* Muestra el mensaje de error cuando el campo es inválido y enfocado */
+input:invalid:focus ~ .error-message {
+    display: block; /* Muestra el mensaje de error */
+}
+
+/* Muestra el mensaje de error después de intentar enviar el formulario */
+form.submitted input:invalid ~ .error-message {
+    display: block; /* Muestra el mensaje de error */
+}
+
+/* ----------- Footer ------------ */
+
+footer{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+footer, .footer__img, .footer__article, .copyright{
+    margin: 10px 0px;
+}
+
+.footer__line{
+    margin: 5px 0;
+    font-style: italic;
+}
+
+.footer__line i {
+    padding: 0px 5px;
+}
+
+.footer__line:hover{
+    color: #3E797C;
+}
+
+.footer__img{
+    height: 7vh;
+}
+
+footer section{
+    /* width: 70%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.copyright{
+    width: 100%;
+}
