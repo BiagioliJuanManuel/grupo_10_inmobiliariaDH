@@ -6,22 +6,84 @@ header{
 
 
 /* Single Product */
-h1{
+.single-prop-detail>h1{
     margin: 0%;
+    background-color:#E5D0AC;
+   
 }
+
 #propdetail{
     display: flex;
+    justify-content: space-around;
     margin-top: 10px;
+    background-color: #E5D0AC;
+    border: solid 1px #17353B;
+    padding:20px 0 ;
+    width: 80vw;
+   
+}
+
+.propcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+}
+
+.propdescription {
+    margin-top: 10px;
+    border: #17353B solid 1px;
+    background-color: #E5D0AC;
+    width: 80vw;
+    padding: 10px;
+    
+}
+
+.propdescription h2, .propdescription p {
+    padding: 10px;
+}
+
+.propdescription ul{
+    padding: 20px;
+    text-align: center;
+}
+
+.map{
+    margin-top: 10px;
+    border: #17353B solid 1px;
+    background-color: #E5D0AC;
+    width: 80vw;
+    padding: 10px;
+    text-align: center;
+
 }
 
 #propdetail .single-prop-detail{
-    width: 50%;
-    margin-top: 60px;
-    margin-left: 50px;
+    width: 30%;
+    
     border: 2px solid rgb(0, 0, 0);
  }
 
+ .single-prop-detail{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .single-prop-detail > ul >li{
+    display: block;
+    text-align: center;
+ }
+
+ .single-prop-detail>button{
+    padding: 11px;
+    border: none;
+    background-color: chartreuse;
+    border-radius: 10px;
+    font-size: medium;
+ }
  /*
+
+ .
 
 #propdetail .single-prop-detail button{
     background-color: #0ab875;
@@ -32,8 +94,8 @@ h1{
 */
 
  #propdetail .single-prop-image{
-    width: 40%;
-    margin-top: 50px;
+    width: 50%;
+    
  }
 
  .small-img-group{
@@ -45,3 +107,13 @@ h1{
     flex-basis: 24%;
     cursor: pointer;
  }
+
+
+ /* 
+PALETA DE COLORES - DH INMOBILIARIA
+#3E797C (AZUL TURQ)
+#E2A600 (MOSTA)
+#E5D0AC (BEIGE)
+#17353B (AZUL OSC)
+
+*/
