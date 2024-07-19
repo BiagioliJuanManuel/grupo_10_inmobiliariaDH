@@ -37,3 +37,7 @@
 
 ## Trello
 - [Link al tablero](https://trello.com/b/Mv16D7yL/grupo-10-inmobiliariadh)
+
+
+## Retrospectivas
+- [RETRO.md](https://github.com/BiagioliJuanManuel/grupo_10_inmobiliariaDH/blob/main/RETRO.md)

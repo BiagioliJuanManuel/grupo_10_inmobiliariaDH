@@ -28,7 +28,10 @@
 
 - Stop doing:
     > No procrastinar
+    
 
+
+---
 
 ## Retrospectiva Sprint 2
 
