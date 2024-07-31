@@ -4,7 +4,7 @@
   "description": "¡Bienvenido a **Inmobiliaria DH**! Somos una plataforma dedicada a facilitar la búsqueda y venta de propiedades inmobiliarias de manera eficiente y segura. Nuestro objetivo es conectar a compradores y vendedores de propiedades, ofreciendo una amplia gama de opciones y herramientas para satisfacer las necesidades de todos nuestros usuarios.",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +21,8 @@
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.5-lts.1",
     "nodemon": "^3.1.4"
   }
 }

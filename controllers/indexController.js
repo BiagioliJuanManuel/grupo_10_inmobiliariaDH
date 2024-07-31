@@ -1,9 +1,15 @@
 const path = require('node:path'); 
 const fs = require('node:fs');
+const data = require('../services/dataService');
 
 let indexController = {
+    propiedades: null,
+
     index: function(req,res){
-        res.render('home');
+        
+        this.propiedades = data.load();
+        res.render('home', { propiedades: propiedades });
+        
     },
     detalle: function(req,res){
         res.render('products/detalleDeProducto');

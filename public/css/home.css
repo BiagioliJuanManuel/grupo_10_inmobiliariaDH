@@ -147,10 +147,13 @@ h1{
 }
 
 .article__card{
+    width: 360px;
+    height: 600px;
     margin: 5%;
     border: 1px solid cornsilk;
     border-radius: 4px;
     background-color:#E5D0AC;
+    box-shadow: 4px 4px 15px 0px black;
 }
 
 .article__title{
