@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
 const path = require("node:path");
-const router = require("./routes/indexRoute");
+const routerIndex = require("./routes/indexRoute");
 const methodOverride = require('method-override');
+const routerUsers = require("./routes/usersRoute");
 
 app.use(express.static("./public"));
 app.use(express.urlencoded({extended: false}));
@@ -18,6 +19,7 @@ app.set('view engine', 'ejs');
 app.listen(PORT,()=> console.log(`Servidor corriendo en puerto ${PORT}`));
 
 
-app.use('/', router);
+app.use('/', routerIndex);
+app.use('/', routerUsers);
 
  

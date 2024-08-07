@@ -70,3 +70,36 @@
     >
     > No dar señales de vida
         
+
+
+## Retrospectiva Sprint 4
+
+- More of:
+    > Más reuniones y trabajo colaborativo
+    > 
+    > Resolver dudas y consultas
+
+- Keep Doing:
+    > Mantener al tanto de las actividades realizadas a los compañeros
+    >
+    > Mantener al equipo al tanto de las complicaciones que surgan al no poder realizar las tareas
+    >
+
+- Start doing:
+    > Mantener una comunicacion activa
+    >
+    > Tomar iniciativa para reunirse y realizar una actividad
+    >
+    > Ponerse al dia con PlayGround
+
+- Less of:
+    > Posponer reuniones
+    >
+    > No avisar cuando no pueden reunirse
+    >
+    > No avisar cuando no pueden completar una tarea o se encuentran con problemas
+
+- Stop doing:
+    > No procrastinar
+    >
+    > No dar señales de vida

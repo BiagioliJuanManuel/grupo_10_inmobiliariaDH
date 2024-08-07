@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "firstName": "Juan",
+        "lastName": "Pérez",
+        "telephone": "+54 11 1234-5678",
+        "email": "juan.perez@example.com",
+        "password": "pass1234",
+        "category": "usuario",
+        "image": "/img/users/user1.jpg"
+    },
+    {
+        "id": 2,
+        "firstName": "María",
+        "lastName": "Gómez",
+        "telephone": "+54 11 2345-6789",
+        "email": "maria.gomez@example.com",
+        "password": "secure5678",
+        "category": "administrador",
+        "image": "/img/users/user2.jpg"
+    },
+    {
+        "id": 3,
+        "firstName": "Carlos",
+        "lastName": "López",
+        "telephone": "+54 11 3456-7890",
+        "email": "carlos.lopez@example.com",
+        "password": "mypassword123",
+        "category": "usuario",
+        "image": "/img/users/user3.jpg"
+    },
+    {
+        "id": 4,
+        "firstName": "Ana",
+        "lastName": "Fernández",
+        "telephone": "+54 11 4567-8901",
+        "email": "ana.fernandez@example.com",
+        "password": "password9876",
+        "category": "administrador",
+        "image": "/img/users/user4.jpg"
+    },
+    {
+        "id": 5,
+        "firstName": "Luis",
+        "lastName": "Martínez",
+        "telephone": "+54 11 5678-9012",
+        "email": "luis.martinez@example.com",
+        "password": "strongpass4321",
+        "category": "usuario",
+        "image": "/img/users/user5.jpg"
+    }
+]

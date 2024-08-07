@@ -19,16 +19,26 @@
         <div class="contenidoPrincipal">
             <img src="placeholder.png" alt="ImagenPrincipal">
             <div class="form-container">
-                <label for="name">Nombre :</label>
-                <input type="text" id="name" name="name">
-                <label for="phone">Telefono :</label>
-                <input type="tel" id="phone" name="phone">
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email">
-                <label for="password">Password :</label>
+                <form method="post" action="/registro" enctype="multipart/form-data">
+
+                    <label for="firstName">Nombre :</label>
+                    <input type="text" id="firstName" name="firstName">
+                    <label for="lastName">Apellido :</label>
+                    <input type="text" id="lastName" name="lastName">
+                    <label for="telephone">Telefono :</label>
+                    <input type="tel" id="telephone" name="telephone">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email">
+                    <label for="password">Password :</label>
                 <input type="password" id="password" name="password">
+                <label for="passwordConfirm">Confirmar Password :</label>
+                <input type="passwordConfirm" id="passwordConfirm" name="passwordConfirm">
+                <label for="image">Imagen de perfil :</label>
+                <input type="file"  id="image" name="image">
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </form>
                 <div class="form-buttons">
-                    <img src="placeholder.png" alt="Boton_1">
                     <img src="placeholder.png" alt="Boton_2">
                     <img src="placeholder.png" alt="Boton_3">
                 </div>
