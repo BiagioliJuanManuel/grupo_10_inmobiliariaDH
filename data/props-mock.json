@@ -16,8 +16,7 @@
         "price": 200000,
         "closest": false,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/a2d6c3b4-9f55-4d12-87e1-02e4d4e9f3f7.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
@@ -37,8 +36,7 @@
         "price": 500,
         "closest": true,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/3ad9d6f7-e2e2-4674-967f-c4b24d7e0c1b.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
@@ -58,8 +56,7 @@
         "price": 350000,
         "closest": true,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/4b5a6c7e-2d1e-4c9e-88e3-5f5a4b6d7c9e.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
@@ -79,8 +76,7 @@
         "price": 350,
         "closest": true,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/5e6a7c8b-4d5c-3e2f-6a9d-8c4b3f7e5a6c.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
@@ -100,8 +96,7 @@
         "price": 220000,
         "closest": false,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/6a7b8c9d-5e6f-4c3d-7e8a-9c5b4d6e7f8a.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
@@ -121,8 +116,7 @@
         "price": 450000,
         "closest": false,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/7d8e9f6b-6a7c-5b4d-9e8a-a5b6d7e8f9c6.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
@@ -142,8 +136,7 @@
         "price": 450,
         "closest": false,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/8f9a0b6c-7a8d-6b5e-0a9e-b5c6d7e8f9a6.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
@@ -163,8 +156,7 @@
         "price": 300,
         "closest": false,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/9b0c7d8e-8a9f-7b6c-1a0e-d6e7f8a9b0c8.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
@@ -184,8 +176,7 @@
         "price": 180000,
         "closest": false,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/0d8e9f0a-9b1c-8d7e-3c2f-f8a9b0c1d0e9.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
@@ -205,8 +196,7 @@
         "price": 400,
         "closest": true,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/1e9f0a8b-0c2d-9e7f-4b3e-c8a9b0c1d0e8.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
@@ -226,8 +216,7 @@
         "price": 270000,
         "closest": false,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/2f0a1b8c-0d3e-9e8f-5c4d-d8a9b0c1e0f9.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
@@ -247,8 +236,7 @@
         "price": 380,
         "closest": true,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/3f1b2c9d-1e4f-9e8f-6c5d-e8a9b0c1f0a8.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
@@ -268,8 +256,7 @@
         "price": 310000,
         "closest": false,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/4f2c3d0e-2f5f-0e9f-7c6d-f8a9b0c1f0b9.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
@@ -289,8 +276,7 @@
         "price": 350,
         "closest": false,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/5f3d4e1f-3f6f-1e0f-8c7d-g9a0b1c2f0a8.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
@@ -310,19 +296,18 @@
         "price": 400000,
         "closest": true,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/6f4e5f2f-4f7f-2e1f-9c8d-h9a0b1c2f0a9.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
         "id": 16,
-        "name": "Misiones 678",
-        "location": "Salta, Tartagal, Centro",
+        "name": "Perú 654",
+        "location": "Salta, Cafayate, Centro",
         "features": {
             "square_meters": 75,
-            "bathrooms": 1,
-            "bedrooms": 2,
-            "rooms": 4,
+            "bathrooms": 2,
+            "bedrooms": 3,
+            "rooms": 5,
             "pool": false,
             "courtyard": true,
             "garages": 1
@@ -331,16 +316,15 @@
         "price": 320,
         "closest": false,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/7f5f6f3f-5f8f-3e2f-0a9e-i9a0b1c2f0a8.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
         "id": 17,
-        "name": "Formosa 890",
-        "location": "Mendoza, Maipú, Centro",
+        "name": "Misiones 377",
+        "location": "Córdoba, Alta Gracia, Centro",
         "features": {
-            "square_meters": 95,
+            "square_meters": 90,
             "bathrooms": 2,
             "bedrooms": 3,
             "rooms": 5,
@@ -349,74 +333,70 @@
             "garages": 1
         },
         "category": "sale",
-        "price": 250000,
-        "closest": false,
+        "price": 240000,
+        "closest": true,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/8f6g7f4f-6f9f-4e3f-1a0f-j9a0b1c2f0a9.png"
+            "/img/no-image_400x400.png"
         ]
     },
     {
         "id": 18,
-        "name": "Chaco 303",
-        "location": "Santa Fe, Venado Tuerto, Centro",
-        "features": {
-            "square_meters": 85,
-            "bathrooms": 1,
-            "bedrooms": 2,
-            "rooms": 4,
-            "pool": false,
-            "courtyard": true,
-            "garages": 0
-        },
-        "category": "rent",
-        "price": 290,
-        "closest": false,
-        "images": [
-            "/img/no-image_400x400.png",
-            "/img/9f7h8f5f-7f0f-5e4f-2a1f-k9a0b1c2f0a8.png"
-        ]
-    },
-    {
-        "id": 19,
-        "name": "Chubut 404",
-        "location": "Córdoba, Alta Gracia, Centro",
+        "name": "Chaco 872",
+        "location": "Santa Fe, Rosario, Echesortu",
         "features": {
             "square_meters": 100,
             "bathrooms": 2,
             "bedrooms": 3,
-            "rooms": 5,
+            "rooms": 6,
+            "pool": false,
+            "courtyard": true,
+            "garages": 1
+        },
+        "category": "rent",
+        "price": 420,
+        "closest": false,
+        "images": [
+            "/img/no-image_400x400.png"
+        ]
+    },
+    {
+        "id": 19,
+        "name": "La Pampa 912",
+        "location": "Buenos Aires, Tigre, Nordelta",
+        "features": {
+            "square_meters": 200,
+            "bathrooms": 4,
+            "bedrooms": 5,
+            "rooms": 10,
+            "pool": true,
+            "courtyard": true,
+            "garages": 3
+        },
+        "category": "sale",
+        "price": 750000,
+        "closest": false,
+        "images": [
+            "/img/no-image_400x400.png"
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Formosa 642",
+        "location": "Mendoza, Godoy Cruz, Biritroque",
+        "features": {
+            "square_meters": 115,
+            "bathrooms": 2,
+            "bedrooms": 3,
+            "rooms": 6,
             "pool": true,
             "courtyard": true,
             "garages": 1
         },
         "category": "sale",
         "price": 280000,
-        "closest": false,
-        "images": [
-            "/img/no-image_400x400.png",
-            "/img/0f8i9f6f-8f1f-6e5f-3a2f-l9a0b1c2f0a9.png"
-        ]
-    },
-    {
-        "id": 20,
-        "name": "La Pampa 505",
-        "location": "Buenos Aires, Bahía Blanca, Centro",
-        "features": {
-            "square_meters": 150,
-            "bathrooms": 3,
-            "bedrooms": 4,
-            "rooms": 8,
-            "pool": true,
-            "courtyard": true,
-            "garages": 2
-        },
-        "category": "sale",
-        "price": 350000,
         "closest": true,
         "images": [
-            "/img/no-image_400x400.png",
-            "/img/1f9j0f7f-9f2f-7e6f-4a3f-m9a0b1c2f0a8.png"
+            "/img/no-image_400x400.png"
         ]
     }
 ]

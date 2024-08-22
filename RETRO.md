@@ -70,7 +70,10 @@
     >
     > No dar señales de vida
         
-  ## Retrospectiva Sprint 3
+
+---
+
+## Retrospectiva Sprint 3
 
 - More of:
     > Comprometerse en avanzar en las tareas individuales y dejar las reuniones para trabajo colaborativo
@@ -105,6 +108,8 @@
     > No procrastinar
     >
     > No dar señales de vida    
+
+---
 
 ## Retrospectiva Sprint 4
 

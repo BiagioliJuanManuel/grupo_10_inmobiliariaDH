@@ -19,7 +19,12 @@ const data = {
 
     delete(filePath){
         let file = path.join(__dirname, '../public', filePath);
-        fs.unlinkSync(file);
+        try {
+            fs.unlinkSync(file);
+            console.log(`El archivo ${filePath} ha sido borrado.`);
+        } catch (err) {
+            console.error(`Error al borrar el archivo ${filePath}:`, err);
+        }
     }
 
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/editar.css">
+    <!-- <link rel="stylesheet" href="/css/home.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Iconos Bootstrap -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Editar Propiedad <%= propiedad.name %>
+    </title>
+</head>
+
+<body>
+    <%- include('../partials/header') %>
+
+        <main>
+            <div class="container">
+                <section class="formulario-container">
+                    <form action="/detalle/<%= propiedad.id %>?_method=PUT" method="post" enctype="multipart/form-data" >
+                        <label class="formulario__label" for="name">Nombre: </label>
+                        <input class="formulario__input" type="text" id="name" name="name" value="<%= propiedad.name %>">
+                        <label class="formulario__label"><i class="bi bi-geo-alt"></i> Locación:  </label>
+                        <input class="formulario__input" type="text" name="location" value="<%= propiedad.location %>">
+                        <!-- <fieldset><legend>Caracteristicas:</legend> -->
+                        <label class="formulario__label"><i class="bi bi-square"></i> Metros cuadrados (m2):</label>
+                        <input class="formulario__input" type="text" name="square_meters" value="<%= propiedad.features.square_meters %>">
+                        
+                        <label class="formulario__label"><i class="fa-solid fa-shower"></i> Bañios</label>
+                            <input class="formulario__input" type="text" name="bathrooms" value="<%= propiedad.features.bathrooms %>"> 
+                        
+                        <label class="formulario__label"><i class="bi bi-door-open"></i> Habitaciones:</label>
+                            
+                           <input class="formulario__input" type="text" name="bedrooms" value="<%= propiedad.features.bedrooms %>">
+   
+                        <label class="formulario__label"><i class="bi bi-columns"></i> Ambientes:</label>
+                            <input class="formulario__input" type="text" name="rooms" value="<%= propiedad.features.rooms %>">
+                        <label class="formulario__label"><i class="bi bi-car-front-fill"></i> Cocheras: </label>
+                            <input class="formulario__input" type="text" name="garages" value="<%= propiedad.features.garages %>">
+                    <fieldset class="formulario__field">
+                        <legend>Amenitis:</legend>
+                        <label class="formulario__label"><i class="fa-solid fa-water-ladder"></i> Pileta: </label>
+                            <input class="formulario__input" type="checkbox" value="true" name="pool" <%= propiedad.features.pool?'checked':''; %>>
+                        <label class="formulario__label"><i class="bi bi-flower3"></i> Jardin: </label>
+                            <input class="formulario__input" type="checkbox" value="true" name="courtyard" <%= propiedad.features.courtyard?'checked':''; %>>
+                    </fieldset>
+                        
+                    <!-- </fieldset> -->
+                        <label class="formulario__label">Categoria:</label>
+                            <select class="formulario__input" name="category" name="category">
+                                <option value="">Elegi una opcion</option>
+                                <option value="sale" <%= propiedad.category == 'sale'? 'selected': '';  %>>Venta</option>
+                                <option value="rent" <%= propiedad.category == 'rent'? 'selected': '';  %>>Alquiler</option>
+
+                            </select> 
+                        
+                        <label class="formulario__label"><i class="bi bi-cash-coin"></i>Precio:</label>
+                            <input class="formulario__input" type="text" name="price" value="<%= propiedad.price %>">
+                        
+                        <label class="formulario__label">Imagen:</label>
+                            <input class="formulario__input" type="file" name="images" multiple>
+                            <input class="formulario__button" type="submit" value="Actualizar publicación" >
+
+                    </form>
+                </section>
+
+            </div>
+
+        </main>
+
+        <%- include('../partials/footer') %>
+
+</body>
+
+</html>

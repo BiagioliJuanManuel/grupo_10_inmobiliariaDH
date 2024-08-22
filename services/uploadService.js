@@ -4,7 +4,7 @@ const crypto = require('node:crypto');
 
 const imageStorage = multer.diskStorage({
     destination: (req,file,callback)=>{
-        const folder = path.join(__dirname, '../public/');
+        const folder = path.join(__dirname, '../public/img/');
         callback(null , folder);
     },
     filename: (req, file, callback)=>{
@@ -16,6 +16,6 @@ const imageStorage = multer.diskStorage({
     }
 });
 
-const upload = multer({imageStorage});
+const upload = multer({ storage: imageStorage });
 
 module.exports = upload;

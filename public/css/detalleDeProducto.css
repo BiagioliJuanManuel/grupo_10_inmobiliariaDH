@@ -74,13 +74,34 @@ header{
     text-align: center;
  }
 
- .single-prop-detail>button{
-    padding: 11px;
-    border: none;
-    background-color: chartreuse;
-    border-radius: 10px;
-    font-size: medium;
+ a {
+    text-decoration: none;
+    color: inherit;
  }
+
+ .button{
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: medium;
+    margin: 10px auto;
+ }
+
+ .button--danger{
+    background-color: #dc3545;
+    color: white;
+ }
+ 
+ .button--warning{
+    background-color: #fd7e14;
+    color: white;
+ }
+
+ .button--whatsapp{
+    background-color: #198754    ;
+    color: white;
+ }
+
  /*
 
  .

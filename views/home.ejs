@@ -27,7 +27,7 @@
                         <div class="article__title flex">
                             <h2><%= propiedad.category=='rent'? 'Alquiler' : 'Venta' %></h2><h2><%= propiedad.name %></h2>
                         </div>
-                        <a href="/" target="_blank" rel="noopener noreferrer">
+                        <a href="/detalle/<%= propiedad.id %>" target="_blank" rel="noopener noreferrer">
                             <img src="<%= propiedad.images[0] %>" alt="">
                         </a>
     
