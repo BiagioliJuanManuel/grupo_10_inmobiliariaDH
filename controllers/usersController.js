@@ -1,19 +1,25 @@
 const path = require('node:path'); 
 const fs = require('node:fs');
 const data = require('../services/dataService');
+const bcrypt = require('bcryptjs');
 
 let usersController = {
     favorito: function(req,res){
-        res.render('products/favorito');
+        let title = 'Favoritos';
+        res.render('products/favorito', { title });
     },
     login: function(req,res){
-        res.render('users/login');
+        let title = 'Login';
+        res.render('users/login', { title });
     },
     registro: function(req,res){
-        res.render('users/registro');
+        let title = 'Registro';
+        res.render('users/registro', { title });
     },
     administracion: function(req,res){
-        res.render('users/administracion');
+        let css = '/css/administracion.css';
+        let title = 'Administracion';
+        res.render('users/administracion', { css, title });
     }
 }
 

@@ -6,19 +6,22 @@ let indexController = {
     propiedades: null,
 
     index: function (req, res) {
+        let css = '/css/home.css';
+        let title = 'Bienvenido!';
 
         this.propiedades = data.load();
-        res.render('home', { propiedades: propiedades });
+        res.render('home', { propiedades, css, title });
 
     },
     detalle: function (req, res) {
         let id = parseInt(req.params.id);
         this.propiedades = data.load();
-
+        
         let propiedad = this.propiedades.find((prop) => prop.id === id);
-
+        
+        let title =  propiedad.name;
         if (propiedad != undefined) {
-            res.render('products/detalleDeProducto', { propiedad });
+            res.render('products/detalleDeProducto', { propiedad, title });
         } else {
             let error = 'No se encontro niguna propiedad con el id: ' + id;
             res.send(error);
@@ -26,15 +29,20 @@ let indexController = {
 
     },
     listado: function (req, res) {
+        let css = '/css/listado.css';
+        let title = 'Propiedades';
+
         this.propiedades = data.load();
-        res.render('products/propiedades', { propiedades });
+        res.render('products/propiedades', { propiedades , css , title});
     },
     editar: function (req, res) {
+        let css = '/css/editar.css';
         this.propiedades = data.load();
         let id = parseInt(req.params.id);
-
+        
         let propiedad = this.propiedades.find((prop) => prop.id === id);
-        res.render('products/editar', { propiedad });
+        let title = 'Editar publicación ' + propiedad.name;
+        res.render('products/editar', { propiedad , css, title});
     },
     actualizar: function (req, res) {
         const pool = req.body.pool === 'true';
@@ -67,13 +75,15 @@ let indexController = {
                         images: images
                     };
 
-                    if (req.files && Array.isArray(req.files)) {
+                    if (req.files && req.files.length > 0) {
                         prop.images = prop.images.filter(img => img !== '/img/no-image_400x400.png');
 
                         req.files.forEach(file => {
                             prop.images.push('/img/' + file.filename);
 
                         });
+                    } else if (prop.images.length === 0) {
+                        prop.images.push('/img/no-image_400x400.png');
                     };
                 }
                 return prop;
@@ -111,7 +121,9 @@ let indexController = {
 
     },
     crearGet: function (req, res) {
-        res.render('products/crear');
+        let css = '/css/editar.css';
+        let title = 'Nueva publicación'
+        res.render('products/crear', { css, title });
     },
     crearPost: function (req, res) {
         const pool = req.body.pool === 'true';
